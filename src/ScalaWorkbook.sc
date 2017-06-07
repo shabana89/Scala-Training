@@ -18,7 +18,8 @@ def helloWorld(): String = {
 helloWorld()
 welcomeUser(helloWorld())
 
-//Create a method that does not signify a return type and outputs whatever is given to it, then test it by passing it the follow different data types, Double, String, Integer, Boolean//
+//Create a method that does not signify a return type and outputs whatever is given to it,//
+// then test it by passing it the follow different data types, Double, String, Integer, Boolean//
 def outputAnything (anything: Any): Any = {
   anything
 }
@@ -33,7 +34,9 @@ name.substring(name.length-numberOfCharachters)
 }
 cutString("hello",3)
 
-//Create a method that accepts 4 parameters, two being a String and two being a character, your method will then join both strings together and then replace all occurrences of the character provided with the second character provided.//
+//Create a method that accepts 4 parameters, two being a String and two being a character, your method will//
+//then join both strings together and then replace all occurrences of the character provided with the second//
+//character provided.//
 def fourParameters (part1: String, part2: String, thingToReplace: String, replacement: String) = {
   var joined = part1.concat(part2)
   joined.replaceAll(thingToReplace, replacement)
@@ -46,7 +49,9 @@ def addingNumbers(number1: Int, number2: Int) = {
 }
 addingNumbers(4, 2)
 
-//Modify your method from the previous task to accept another parameter, a Boolean. Your method will now check if that Boolean is true, and if it is then it will return the sum of the two numbers provided, if it is false it will return the multiplication of the two numbers instead.//
+//Modify your method from the previous task to accept another parameter, a Boolean. Your method will now//
+//check if that Boolean is true, and if it is then it will return the sum of the two numbers provided, if it//
+//is false it will return the multiplication of the two numbers instead.//
 def addingOrMultiplying (number1: Int, number2: Int, add: Boolean)  = {
   if (add)
     number1 + number2
@@ -56,7 +61,9 @@ def addingOrMultiplying (number1: Int, number2: Int, add: Boolean)  = {
 addingOrMultiplying(4,2,true)
 addingOrMultiplying(4,2,false)
 
-//Modify your method from the previous task to have some more conditional statements to check if one of the numbers is 0, which if this is true then you should return the other non-0 number. If both numbers are 0 then return 0.//
+//Modify your method from the previous task to have some more conditional statements to check if one of//
+//the numbers is 0, which if this is true then you should return the other non-0 number. If both numbers//
+//are 0 then return 0//
 def addingOrMultiplying2 (number1: Int, number2: Int, add: Boolean)  = {
   if (number1.equals(0) && number2.equals(0)) {
     0

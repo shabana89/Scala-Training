@@ -1,18 +1,23 @@
-//Create a method that accepts two parameters, a string and an integer. Your method should print out the string provided as many times as the integer designates//
+//Create a method that accepts two parameters, a string and an integer. Your method should print out the string//
+//provided as many times as the integer designates//
 var duplicateHi = 3
 while (duplicateHi > 0) {
   println("Hi")
   duplicateHi -= 1
 }
 
-//Create a method accepts two parameters, one a String and the other an integer, your method will then output that string in a rectangle-like fashion as many times as the number dictates.//
+//Create a method accepts two parameters, one a String and the other an integer, your method will then output
+//that string in a rectangle-like fashion as many times as the number dictates.//
 def quantity (a:String, b:Int): Unit = {
   for (i <-0 until b)
     println(a * b)
 }
 quantity("H",4)
 
-//Create a method that accepts three parameters, two strings and one integer. Your method will then loop from 1 to the integer provided, outputting the current iteration count every iteration. However if the current iteration is divisible by 3, output the first String provided. If the current iteration is divisible by 5, output the second String provided. If it is divisible by both 3 and 5, then output the concatenation of the two Strings.//
+//Create a method that accepts three parameters, two strings and one integer. Your method will then loop from 1 to//
+//the integer provided, outputting the current iteration count every iteration. However if the current iteration is//
+//divisible by 3, output the first String provided. If the current iteration is divisible by 5, output the second//
+//String provided. If it is divisible by both 3 and 5, then output the concatenation of the two Strings.//
 def fizzBuzz (a:String, b:String, c:Int): Unit = {
   for (i <- 1 to c) {
     if (i % 3 == 0 && i % 5 == 0) {
@@ -49,13 +54,22 @@ helloMessage("H",4, 4)
 //3//
 def fizzBuzzNew (a:String, b:String, c:Int): Unit = {
 
-
 }
 
 
+//Rewrite your previous conditional exercises to use pattern matching//
 
+//1//
 
+//2//
 
+//3//
+
+//Create a method that takes a pair of integers and then returns the pair swapped around using pattern matching//
+//Input-> 1,2//
+//Output->2,1//
+//Your method should work with a List, Array and Tuple input.//
+//Additional – Accept a Collection that has more than two inputs and returns the collection with the first two//
 
 
 
