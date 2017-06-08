@@ -34,7 +34,6 @@ def fizzBuzz (a:String, b:String, c:Int): Unit = {
 fizzBuzz("Fizz", "Buzz", 15)
 
 //Rewrite your previous three iteration exercises but using method recursion, no loops involved.//
-
 //1//
 def hiMessage (a:String, b:Int): Unit = {
   if (b > 1)
@@ -52,24 +51,22 @@ def helloMessage (a:String, b:Int, c:Int): Unit = {
 helloMessage("H",4, 4)
 
 //3//
-def fizzBuzzNew (a:String, b:String, c:Int): Unit = {
-
+def fizzBuzz2 (a:String, b:String, i:Int): Unit = {
+  if (i > 1) {
+    fizzBuzz2(a, b, i - 1)
+  }
+  if (i % 3 == 0 && i % 5 == 0) {
+    println(a.concat(b))
+  } else if (i % 3 == 0) {
+    println(a)
+  } else if (i % 5 == 0){
+    println(b)
+  } else {
+    println(i)
+  }
 }
+fizzBuzz2("Fizz", "Buzz", 15)
 
-
-//Rewrite your previous conditional exercises to use pattern matching//
-
-//1//
-
-//2//
-
-//3//
-
-//Create a method that takes a pair of integers and then returns the pair swapped around using pattern matching//
-//Input-> 1,2//
-//Output->2,1//
-//Your method should work with a List, Array and Tuple input.//
-//Additional – Accept a Collection that has more than two inputs and returns the collection with the first two//
 
 
 
