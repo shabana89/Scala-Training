@@ -71,7 +71,7 @@ class Bike (val bikeMakeAndModel:String, val bikeRepairType:String, val bikeRepa
   val registrationNum: String = bikeRegistrationNum
 
   override def toString: String = s"The bike is a $makeAndModel. The repair type is a $repairType " +
-                                  s"and this will cost $repairCost pounds to repair. The bike ID is $registrationNum"
+                                  s"and this will cost $repairCost pounds to repair. The bike ID is $registrationNum."
 
 }
 
@@ -83,8 +83,8 @@ val bike: Bike = new Bike ("Dayton C3","faulty right brake",250,"YH43 RSA")
 class Garage {
 
 
-  var vehicles = scala.collection.mutable.Map [String, Vehicle]()
-  var employees = scala.collection.mutable.Map [Int, Employee]()
+  var vehicles = scala.collection.mutable.Map[String, Vehicle]()
+  var employees = scala.collection.mutable.Map[Int, Employee]()
   var isOpen = false
 
 
@@ -92,18 +92,20 @@ class Garage {
     isOpen = true
   }
 
-  def close (): Unit = {
+  def close(): Unit = {
     isOpen = false
   }
 
-  def addingVehicles (vehicle:Vehicle): Unit = {
-  vehicles += (vehicle.registrationNum -> vehicle)
+  def addingVehicles(vehicle: Vehicle): Unit = {
+    vehicles += (vehicle.registrationNum -> vehicle)
 
   }
 
-  def removingVehicles (vehicle: Vehicle): Unit = {
+  def removingVehicles(vehicle: Vehicle): Unit = {
     vehicles -= (vehicle.registrationNum)
   }
+
+}
 
 //  def calculatingBills (cost1:Int, cost2:Int, cost3:Int) = {
 //
@@ -111,15 +113,11 @@ class Garage {
 //
 //  }
 
-  val outputtingContentsOfGarage = String {
+  //val outputtingContentsOfGarage = String {
+
+    //override def toString: String = s"The final amount made today is $outputtingContentsOfGarage."
 
 
-    override def toString: String = s"The final amount made today is $outputtingContentsOfGarage."
-
-
-  }
-
-}
 
 
 //Stage 3
@@ -150,5 +148,4 @@ abstract class Part {
 }
 
 
-def
 
