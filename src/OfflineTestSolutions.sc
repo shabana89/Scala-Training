@@ -18,7 +18,6 @@ doubleChar("AAbb")
 doubleChar("Hi-There")
 
 
-
 //Task 2
 
 //A sandwich is two pieces of bread with something in between. Return the string that is
@@ -30,6 +29,24 @@ doubleChar("Hi-There")
 "xxbreadyy".substring(9)
 
 
+//Task 3
+
+def evenlySpaced (a:Int, b:Int, c:Int):Boolean = {
+
+  var numbers:List [Int] = List(a,b,c).sorted
+
+  if (numbers(0) - numbers(1) == numbers(1) - numbers(2))
+
+    true
+
+  else
+
+    false
+}
+
+evenlySpaced(2,4,6)
+evenlySpaced(4,6,2)
+evenlySpaced(4,6,3)
 
 //Task 5
 //We have a number of bunnies and each bunny has two big floppy ears. We want to compute the
@@ -45,8 +62,6 @@ def bunnyEars(input:Int): Int = {
 bunnyEars(0)
 bunnyEars(1)
 bunnyEars(2)
-
-
 
 //Task 7
 
@@ -64,7 +79,6 @@ def endsWithLy (input:String): Boolean = {
 endsWithLy("oddly")
 endsWithLy("y")
 endsWithLy("oddy")
-
 
 
 //Task 7 (different method)

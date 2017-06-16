@@ -70,19 +70,6 @@ object Part {
 
 
 
-//Design a queue system for fixing vehicles. This will be composed of numerous segments.
-
-//If an employee of the garage is available
-//How many parts are broken on the car
-//How long each part takes to be fixed
-//Your Garage should now be designed with this process in mind;
-//Garage opens, 10-20 vehicles immediately all get in line to be fixed.
-//Output how long it takes for all vehicles to be fixed, at what point each vehicle was
-//tended to and finished fixing, which employee tended to which vehicle, and how
-//much each car repair cost and then the total earnings for the garage that day.
-
-
-//need a factory like above for vehicle that randomly chooses whether its a car or bike next.
 
 
 

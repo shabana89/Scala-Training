@@ -1,20 +1,41 @@
-class Employee (val employeeFirstName:String, val employeeLastName:String, val employeeNumber:Int,
-                val employeePhoneNumber:String) extends Garage.Person {
+class Employee (val employeeNumber:Int, val EmployeeWorkingHoursPerDay) extends Garage.Person {
 
-  val firstName:String = employeeFirstName
-  val lastName:String = employeeLastName
-  val phoneNumber:String = employeePhoneNumber
 
-  override def toString: String = s"Hi my name is $firstName $lastName. My employee number is $employeeNumber " +
-    s"and my phone number is $phoneNumber."
+
+  val workingHoursPerDay:Int = EmployeeWorkingHoursPerDay
+
+  override def toString: String = "s My employee number is $employeeNumber."
+
+}
+
+object Employee {
+
+  var numberOfMechanics = Int
+
+
+  private class Mechanic1 extends Employee {
+    override workingHoursPerDay
+
+  }
+
+  private class Mechanic2 extends Employee {
+
+
+  }
+
+  private class Mechanic3 extends Employee {
+
+
+  }
+
+  def mechanicQueues(): Employee = {
+
+if ()
+
+  }
 
 }
 
 //val Employee: Employee = new Employee("John","Chambers",183,"07487776632")
 
 
-
-
-
-
-}
